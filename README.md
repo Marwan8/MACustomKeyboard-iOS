@@ -1,5 +1,6 @@
 # MACustomKeyboard-iOS
 MACustomKeyboard is custom numeric keyboard written in Objective C.
+You can dynamically change the order of buttons.
 #Screenshots
 ![alt tag](http://i.imgur.com/2xViAmp.png?1)
 
@@ -7,6 +8,12 @@ MACustomKeyboard is custom numeric keyboard written in Objective C.
 
 Check out the sample app for an example of how to use MACustomKeyboard.
 You can use Blocks or Delegate to handle the Keyboard events.
+
+MACustomKeyboard is custom UIView which's passed as inputView to any textField
+
+
+
+Keys is arary of string values which's shown as keys and applied as text to text field
 
 
     NSArray * keys = @[@"1",@"2",@"3",@"4"
