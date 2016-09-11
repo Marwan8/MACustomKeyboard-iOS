@@ -2,7 +2,7 @@
 MACustomKeyboard is custom numeric keyboard written in Objective C.
 You can dynamically change the order of buttons.
 #Screenshots
-![alt tag](http://imgur.com/gtQPxhz)
+![alt tag](http://i.imgur.com/gtQPxhz.png)
 
 #How to Use
 
