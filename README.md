@@ -2,12 +2,11 @@
 MACustomKeyboard is custom numeric keyboard written in Objective C.
 You can dynamically change the order of buttons.
 #Screenshots
-![alt tag](http://i.imgur.com/2xViAmp.png?1)
+![alt tag](http://imgur.com/gtQPxhz)
 
 #How to Use
 
 Check out the sample app for an example of how to use MACustomKeyboard.
-You can use Blocks or Delegate to handle the Keyboard events.
 
 MACustomKeyboard is custom UIView which's passed as inputView to any textField
 
@@ -21,7 +20,6 @@ Keys is arary of string values which's shown as keys and applied as text to text
     [customKeyboard setKeyboardButtons:keys];
     
 
-#Blocks
 
     __weak typeof(self) weakerSelf = self;
     //Number Tapped
@@ -39,23 +37,6 @@ Keys is arary of string values which's shown as keys and applied as text to text
         weakerSelf.textField.text = [weakerSelf.textField.text substringToIndex:weakerSelf.textField.text.length - 1];
         }
     }];
-
-#Delegate
-    -(void)doneTapped:(MACustomKeyboard *)view{
-    
-      [self.textField resignFirstResponder];
-    }
-
-    -(void)clearTapped:(MACustomKeyboard *)view{
-    
-     if(self.textField.text.length > 0){
-        self.textField.text = [self.textField.text substringToIndex:self.textField.text.length - 1];
-     }
-    }
-
-    -(void)numberTapped:(MACustomKeyboard *)view Text:(NSString *)text{
-        self.textField.text = [self.textField.text stringByAppendingString:text];
-    }
 
 
 #Author
