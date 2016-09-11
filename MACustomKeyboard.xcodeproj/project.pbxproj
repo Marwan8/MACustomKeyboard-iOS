@@ -15,6 +15,8 @@
 		D6A7F6151CD4D4D5003D3240 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6A7F6131CD4D4D5003D3240 /* LaunchScreen.storyboard */; };
 		D6A7F6201CD4D4D5003D3240 /* MACustomKeyboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A7F61F1CD4D4D5003D3240 /* MACustomKeyboardTests.m */; };
 		D6A7F62B1CD4D4D5003D3240 /* MACustomKeyboardUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A7F62A1CD4D4D5003D3240 /* MACustomKeyboardUITests.m */; };
+		D6A7F63F1CD4D5A6003D3240 /* MACustomKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A7F63E1CD4D5A6003D3240 /* MACustomKeyboard.m */; };
+		D6A7F6411CD4D5F8003D3240 /* MACustomKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6A7F6401CD4D5F8003D3240 /* MACustomKeyboard.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		D6A7F6261CD4D4D5003D3240 /* MACustomKeyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MACustomKeyboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A7F62A1CD4D4D5003D3240 /* MACustomKeyboardUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MACustomKeyboardUITests.m; sourceTree = "<group>"; };
 		D6A7F62C1CD4D4D5003D3240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6A7F63D1CD4D5A6003D3240 /* MACustomKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACustomKeyboard.h; sourceTree = "<group>"; };
+		D6A7F63E1CD4D5A6003D3240 /* MACustomKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACustomKeyboard.m; sourceTree = "<group>"; };
+		D6A7F6401CD4D5F8003D3240 /* MACustomKeyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MACustomKeyboard.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +115,9 @@
 				D6A7F6131CD4D4D5003D3240 /* LaunchScreen.storyboard */,
 				D6A7F6161CD4D4D5003D3240 /* Info.plist */,
 				D6A7F6051CD4D4D4003D3240 /* Supporting Files */,
+				D6A7F63D1CD4D5A6003D3240 /* MACustomKeyboard.h */,
+				D6A7F63E1CD4D5A6003D3240 /* MACustomKeyboard.m */,
+				D6A7F6401CD4D5F8003D3240 /* MACustomKeyboard.xib */,
 			);
 			path = MACustomKeyboard;
 			sourceTree = "<group>";
@@ -244,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6A7F6151CD4D4D5003D3240 /* LaunchScreen.storyboard in Resources */,
+				D6A7F6411CD4D5F8003D3240 /* MACustomKeyboard.xib in Resources */,
 				D6A7F6121CD4D4D5003D3240 /* Assets.xcassets in Resources */,
 				D6A7F6101CD4D4D4003D3240 /* Main.storyboard in Resources */,
 			);
@@ -270,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6A7F63F1CD4D5A6003D3240 /* MACustomKeyboard.m in Sources */,
 				D6A7F60D1CD4D4D4003D3240 /* ViewController.m in Sources */,
 				D6A7F60A1CD4D4D4003D3240 /* AppDelegate.m in Sources */,
 				D6A7F6071CD4D4D4003D3240 /* main.m in Sources */,
@@ -415,10 +425,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MACustomKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.marwan.MACustomKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -426,10 +440,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MACustomKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.marwan.MACustomKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -498,6 +516,7 @@
 				D6A7F6311CD4D4D5003D3240 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D6A7F6321CD4D4D5003D3240 /* Build configuration list for PBXNativeTarget "MACustomKeyboardTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +525,7 @@
 				D6A7F6341CD4D4D5003D3240 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D6A7F6351CD4D4D5003D3240 /* Build configuration list for PBXNativeTarget "MACustomKeyboardUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +534,7 @@
 				D6A7F6371CD4D4D5003D3240 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
