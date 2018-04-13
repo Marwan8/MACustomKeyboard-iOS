@@ -19,24 +19,22 @@ Keys is arary of string values which's shown as keys and applied as text to text
                        ,@"6",@"7",@"8",@"5",@"9",@"0",@"Clear",@"Done"];
     [customKeyboard setKeyboardButtons:keys];
     
-
-
     __weak typeof(self) weakerSelf = self;
     //Number Tapped
-    [customKeyboard setNumberTappedBlock:^(MACustomKeyboard *view, NSString *text){
+    [customKeyboard setNumberTappedBlock:^(MACustomKeyboard *view, NSString *text) {
         weakerSelf.textField.text = [weakerSelf.textField.text stringByAppendingString:text];
     }];
     
     //Done button Tapped
-    [customKeyboard setDoneTappedBlock:^(MACustomKeyboard *view){
+    [customKeyboard setDoneTappedBlock:^(MACustomKeyboard *view) {
         [weakerSelf.textField resignFirstResponder];
     }];
     //Clear Button Tapped
-    [customKeyboard setClearTappedBlock:^(MACustomKeyboard *view){
-        if(weakerSelf.textField.text.length > 0){
-        weakerSelf.textField.text = [weakerSelf.textField.text substringToIndex:weakerSelf.textField.text.length - 1];
+    [customKeyboard setClearTappedBlock:^(MACustomKeyboard *view) {
+        if(weakerSelf.textField.text.length > 0) {
+            weakerSelf.textField.text = [weakerSelf.textField.text substringToIndex:weakerSelf.textField.text.length - 1];
         }
-    }];
+    }]
 
 
 #Author
