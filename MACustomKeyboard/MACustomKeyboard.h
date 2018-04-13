@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
 @class MACustomKeyboard;
 typedef void (^NumberTappedBlock) (MACustomKeyboard *view, NSString *text);
 typedef void (^DoneTappedBlock) (MACustomKeyboard *view);
@@ -21,8 +20,6 @@ typedef void (^ClearTappedBlock) (MACustomKeyboard *view);
 @property (nonatomic, copy) DoneTappedBlock doneTappedBlock;
 @property (nonatomic, copy) ClearTappedBlock clearTappedBlock;
 
-@property (nonatomic) id delegate;
-
--(void)setKeyboardButtons:(NSArray *)keys;
+- (void)setKeyboardButtons:(NSArray *)keys;
 - (IBAction)keyboardButtonPressed:(id)sender;
 @end

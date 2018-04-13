@@ -1,174 +1,178 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="GXO-dX-JrB" customClass="MACustomKeyboard">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ep-jX-yRw">
-                    <rect key="frame" x="0.0" y="0.0" width="200" height="150"/>
-                    <color key="backgroundColor" red="0.070073215301191843" green="0.30588235289999999" blue="0.29710792438769906" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="0.0" y="0.0" width="125" height="167"/>
+                    <color key="backgroundColor" red="0.070073215301191843" green="0.30588235289999999" blue="0.29710792438769906" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <state key="normal" title="1">
-                        <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="keyboardButtonPressed:" destination="GXO-dX-JrB" eventType="touchUpInside" id="Be5-1y-T4m"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmw-vj-t9Y">
-                    <rect key="frame" x="200" y="0.0" width="200" height="150"/>
-                    <color key="backgroundColor" red="0.070073215301191843" green="0.30588235289999999" blue="0.29710792438769906" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="125" y="0.0" width="125" height="167"/>
+                    <color key="backgroundColor" red="0.070073215301191843" green="0.30588235289999999" blue="0.29710792438769906" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <state key="normal" title="2">
-                        <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="keyboardButtonPressed:" destination="GXO-dX-JrB" eventType="touchUpInside" id="Wat-tU-TPw"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6h-Wh-kDU">
-                    <rect key="frame" x="400" y="0.0" width="200" height="150"/>
-                    <color key="backgroundColor" red="0.070073215301191843" green="0.30588235289999999" blue="0.29710792438769906" alpha="1" colorSpace="calibratedRGB"/>
-                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <rect key="frame" x="250" y="0.0" width="125" height="167"/>
+                    <color key="backgroundColor" red="0.070073215301191843" green="0.30588235289999999" blue="0.29710792438769906" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal">
-                        <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="keyboardButtonPressed:" destination="GXO-dX-JrB" eventType="touchUpInside" id="qUl-Ef-F1b"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ct2-bs-sGw">
-                    <rect key="frame" x="0.0" y="150" width="200" height="150"/>
-                    <color key="backgroundColor" red="0.070073215301191843" green="0.30588235289999999" blue="0.29710792438769906" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="0.0" y="167" width="125" height="166.5"/>
+                    <color key="backgroundColor" red="0.070073215301191843" green="0.30588235289999999" blue="0.29710792438769906" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <state key="normal" title="4">
-                        <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="keyboardButtonPressed:" destination="GXO-dX-JrB" eventType="touchUpInside" id="6Hw-qk-zuZ"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0k-bq-dWN">
-                    <rect key="frame" x="200" y="150" width="200" height="150"/>
-                    <color key="backgroundColor" red="0.070073215301191843" green="0.30588235289999999" blue="0.29710792438769906" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="125" y="167" width="125" height="166.5"/>
+                    <color key="backgroundColor" red="0.070073215301191843" green="0.30588235289999999" blue="0.29710792438769906" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <state key="normal" title="5">
-                        <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="keyboardButtonPressed:" destination="GXO-dX-JrB" eventType="touchUpInside" id="ZCD-nt-EFz"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBW-bG-p4h">
-                    <rect key="frame" x="400" y="150" width="200" height="150"/>
-                    <color key="backgroundColor" red="0.070073215301191843" green="0.30588235289999999" blue="0.29710792438769906" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="250" y="167" width="125" height="166.5"/>
+                    <color key="backgroundColor" red="0.070073215301191843" green="0.30588235289999999" blue="0.29710792438769906" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <state key="normal" title="6">
-                        <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="keyboardButtonPressed:" destination="GXO-dX-JrB" eventType="touchUpInside" id="qTV-H6-Ws9"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kze-VL-hZ3">
-                    <rect key="frame" x="0.0" y="300" width="200" height="150"/>
-                    <color key="backgroundColor" red="0.070073215301191843" green="0.30588235289999999" blue="0.29710792438769906" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="0.0" y="333.5" width="125" height="167"/>
+                    <color key="backgroundColor" red="0.070073215301191843" green="0.30588235289999999" blue="0.29710792438769906" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <state key="normal" title="7">
-                        <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="keyboardButtonPressed:" destination="GXO-dX-JrB" eventType="touchUpInside" id="WEX-B6-EZG"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2k-kp-vqA">
-                    <rect key="frame" x="200" y="300" width="200" height="150"/>
-                    <color key="backgroundColor" red="0.070073215301191843" green="0.30588235289999999" blue="0.29710792438769906" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="125" y="333.5" width="125" height="167"/>
+                    <color key="backgroundColor" red="0.070073215301191843" green="0.30588235289999999" blue="0.29710792438769906" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <state key="normal" title="8">
-                        <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="keyboardButtonPressed:" destination="GXO-dX-JrB" eventType="touchUpInside" id="ghX-lF-Al4"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KiK-zG-Jj1">
-                    <rect key="frame" x="400" y="300" width="200" height="150"/>
-                    <color key="backgroundColor" red="0.070073215301191843" green="0.30588235289999999" blue="0.29710792438769906" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="250" y="333.5" width="125" height="167"/>
+                    <color key="backgroundColor" red="0.070073215301191843" green="0.30588235289999999" blue="0.29710792438769906" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <state key="normal" title="9">
-                        <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="keyboardButtonPressed:" destination="GXO-dX-JrB" eventType="touchUpInside" id="oLT-Km-udS"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCP-aE-uyB">
-                    <rect key="frame" x="0.0" y="450" width="200" height="150"/>
-                    <color key="backgroundColor" red="0.070073215301191843" green="0.30588235289999999" blue="0.29710792438769906" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="0.0" y="500.5" width="125" height="166.5"/>
+                    <color key="backgroundColor" red="0.070073215301191843" green="0.30588235289999999" blue="0.29710792438769906" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <state key="normal" title="3">
-                        <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="keyboardButtonPressed:" destination="GXO-dX-JrB" eventType="touchUpInside" id="0WX-sR-ipg"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rug-nx-yVR">
-                    <rect key="frame" x="200" y="450" width="200" height="150"/>
-                    <color key="backgroundColor" red="0.070073215301191843" green="0.30588235289999999" blue="0.29710792438769906" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="125" y="500.5" width="125" height="166.5"/>
+                    <color key="backgroundColor" red="0.070073215301191843" green="0.30588235289999999" blue="0.29710792438769906" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <state key="normal" title="0">
-                        <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="clearButtonPressed:" destination="GXO-dX-JrB" eventType="touchUpInside" id="9kz-U1-MEd"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHT-Kb-1z6">
-                    <rect key="frame" x="400" y="450" width="200" height="150"/>
-                    <color key="backgroundColor" red="0.070073215301191843" green="0.30588235289999999" blue="0.29710792438769906" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="250" y="500.5" width="125" height="166.5"/>
+                    <color key="backgroundColor" red="0.070073215301191843" green="0.30588235289999999" blue="0.29710792438769906" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <state key="normal" title="Done">
-                        <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="doneButtonPressed:" destination="GXO-dX-JrB" eventType="touchUpInside" id="i2T-E2-30v"/>
                     </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KMG-nK-gWm">
-                    <rect key="frame" x="0.0" y="150" width="600" height="1"/>
+                    <rect key="frame" x="0.0" y="167" width="375" height="1"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="h2X-Lz-vZJ"/>
                     </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mUw-w6-kSS">
-                    <rect key="frame" x="0.0" y="301" width="600" height="1"/>
+                    <rect key="frame" x="0.0" y="334.5" width="375" height="1"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="dVv-4Y-DTV"/>
                     </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ok2-aB-vrJ">
-                    <rect key="frame" x="0.0" y="450" width="600" height="1"/>
+                    <rect key="frame" x="0.0" y="500.5" width="375" height="1"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="tVc-eM-lcz"/>
                     </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gFl-0Z-nXH">
-                    <rect key="frame" x="200" y="0.0" width="1" height="600"/>
+                    <rect key="frame" x="125" y="0.0" width="1" height="667"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="1" id="G7y-G2-k8O"/>
                     </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hdc-ss-cJ3">
-                    <rect key="frame" x="400" y="0.0" width="1" height="600"/>
+                    <rect key="frame" x="250" y="0.0" width="1" height="667"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="1" id="S8c-su-bTt"/>
                     </constraints>

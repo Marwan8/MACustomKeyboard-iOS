@@ -10,20 +10,17 @@
 
 @implementation MACustomKeyboard
 
--(void)setKeyboardButtons:(NSArray *)keys{
+- (void)setKeyboardButtons:(NSArray *)keys {
     self.keys = keys;
-    for(UIView * view in self.subviews){
-        if([view isKindOfClass:[UIButton class]])
-        {
+    for(UIView * view in self.subviews) {
+        if([view isKindOfClass:[UIButton class]]) {
             UIButton * keyboardBtn = (UIButton *) view;
-            if ([keys[keyboardBtn.tag - 1] isKindOfClass:[NSString class]]) {
+            if([keys[keyboardBtn.tag - 1] isKindOfClass:[NSString class]]) {
                 [keyboardBtn setTitle:keys[keyboardBtn.tag - 1] forState:UIControlStateNormal];
             }
         }
     }
-    
 }
-
 
 - (IBAction)keyboardButtonPressed:(id)sender {
     UIButton * btn = (UIButton *)sender;
@@ -35,17 +32,14 @@
 }
 
 - (IBAction)doneButtonPressed:(id)sender {
-    
     if (self.doneTappedBlock != nil) {
         self.doneTappedBlock(self);
     }
 }
 
 - (IBAction)clearButtonPressed:(id)sender {
-    
     if (self.clearTappedBlock != nil) {
         self.clearTappedBlock(self);
     }
 }
-
 @end
